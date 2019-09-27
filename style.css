@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #E6ECFF;
-  color: rgb(128, 128, 128);
+  
+  
   font-size: 1.3em;
   letter-spacing: 0.1rem;
 }
@@ -33,7 +33,6 @@ h1 {
 .intro {
   margin-top: 0.5em;
   font-size: 1.2rem;
-  color: grey;
   font-style: bold;
   padding-left: 8%;
   padding-right: 8%;
@@ -164,6 +163,71 @@ h2 {
   margin: 8%;
 }
 
+.Flexu{ 
+  display:-webkit-box; 
+  display:-ms-flexbox; 
+  display:flex;
+  list-style-type:none;
+  -webkit-box-orient:horizontal;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
+          flex-direction:row;
+  margin-top:5%;
+  margin-bottom:2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+.puce1{
+  padding-left:4%;
+}
+
+.FlexG{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  text-align:justify;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.FlexG{
+  border-right-width: 20px;
+  border-right-style: ridge;
+  border-right-color: rgba(204, 99, 0, 0.2); 
+  border-bottom-width: 5px;
+  border-bottom-style: ridge;
+  border-bottom-color: rgba(204, 99, 0, 0.2);
+}
+
+.Bloc{
+  display:inline-block;
+  text-align:justify;
+  width:100%;
+  padding-left:8%;
+  padding-right:5%;
+}
+
+.IMA{
+  max-width:20%;
+  height:auto;
+}
+
+.Flexu h3{
+max-width:20%;
+}
+
+.photo{
+  width:0%;
+}
 
 @media only screen and (min-width: 770px) {
   h1 {
@@ -240,161 +304,16 @@ h2 {
     margin-left: 44%;
     margin-right: 8%;
   }
-}
 
-@media only screen and (min-width: 770px) {
-  #parcours p {
-    padding-bottom: 2em;
+  #Wrap, #Wrap1{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding:2%;
   }
-  .front {
-    border-left:ridge 5px;
-    border-color: orange;
-    margin: 2%;
-    padding: 2%;
-  }
-  .back {
-    border-left:ridge 5px;
-    border-color: orange;
-    margin: 2%;
-    padding: 2%;
-  }
-  .conclusion {
-    border-left:ridge 5px;
-    border-color: orange;
-    margin: 2%;
-    padding: 2%;
-  }
-  #parcours h3 {
-    -webkit-text-decoration: underline C;
-            text-decoration: underline C;
-    font-size: 1.5em;
-  }
- }
- 
 
-.Flexu{ 
-  display:-webkit-box; 
-  display:-ms-flexbox; 
-  display:flex;
-  list-style-type:none;
-  -webkit-box-orient:horizontal;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:row;
-          flex-direction:row;
-  margin-top:5%;
-  margin-bottom:2%;
-  padding-left: 8%;
-  padding-right: 8%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
-}
-
-@media only screen and (min-width: 770px){
-  .Flexu{ 
-    margin-top:0;
-    margin-bottom:0;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
-  }
-}
-
-.puce1{
-  padding-left:4%;
-}
-
-.FlexG{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:column;
-          flex-direction:column;
-  text-align:justify;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.FlexG{
-  border-right-width: 20px;
-  border-right-style: ridge;
-  border-right-color: rgba(204, 99, 0, 0.2); 
-  border-bottom-width: 5px;
-  border-bottom-style: ridge;
-  border-bottom-color: rgba(204, 99, 0, 0.2);}
-
-@media only screen and (min-width: 770px){
-  .FlexG{
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:row;
-            flex-direction:row;
-    -webkit-box-align:start;
-        -ms-flex-align:start;
-            align-items:flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top:20px;
-  }
-  #langages .FlexG{
-    -webkit-box-orient:horizontal;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:row;
-            flex-direction:row;
-    -webkit-box-align:start;
-        -ms-flex-align:start;
-            align-items:flex-start;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top:100px;
-  }
-}
-
-.Bloc{
-  display:inline-block;
-  text-align:justify;
-  width:100%;
-  padding-left:8%;
-  padding-right:5%;
-}
-
-.IMA{
-  max-width:20%;
-  height:auto;}
-
-@media only screen and (min-width: 770px){
-  .IMA{
-    max-width:100px;} 
-}
-
-.Flexu h3{
-max-width:20%;
-}
-
-
-@media only screen and (max-width: 770px){
-  #langages h2{
-    background: url("https://www.zupimages.net/up/19/38/4r52.jpeg") center;
-    height:50px;}
-  #frameworks h2{
-    background: url("https://www.zupimages.net/up/19/38/l5ye.jpeg") center;
-    height:50px;}
-  #outils h2{
-    background: url("https://www.moncoeurdherault.fr/sites/default/files/field/image/outil-web-la-liste-ultime.jpg") center;
-    height:50px;}
-}
-
-.photo{
-  width:0%;
-}
-
- @media only screen and (min-width: 770px){
   .barre{
     display:-webkit-box;
     display:-ms-flexbox;
@@ -414,14 +333,158 @@ max-width:20%;
   .photo{
     width:30%;
   }
-}
-@media only screen and (min-width: 770px){
-  #Wrap, #Wrap1{
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding:2%;
+
+  .IMA{
+    max-width:100px;
   }
-} 
+
+    .FlexG{
+      -webkit-box-orient:horizontal;
+      -webkit-box-direction:normal;
+          -ms-flex-direction:row;
+              flex-direction:row;
+      -webkit-box-align:start;
+          -ms-flex-align:start;
+              align-items:flex-start;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top:20px;
+    }
+    #langages .FlexG{
+      -webkit-box-orient:horizontal;
+      -webkit-box-direction:normal;
+          -ms-flex-direction:row;
+              flex-direction:row;
+      -webkit-box-align:start;
+          -ms-flex-align:start;
+              align-items:flex-start;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-top:100px;
+    }
+
+    .Flexu{ 
+      margin-top:0;
+      margin-bottom:0;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+          -ms-flex-direction:column;
+              flex-direction:column;
+    }
+
+    #parcours p {
+      padding-bottom: 2em;
+    }
+    .front {
+      border-left:ridge 5px;
+      border-color: orange;
+      margin: 2%;
+      padding: 2%;
+    }
+    .back {
+      border-left:ridge 5px;
+      border-color: orange;
+      margin: 2%;
+      padding: 2%;
+    }
+    .conclusion {
+      border-left:ridge 5px;
+      border-color: orange;
+      margin: 2%;
+      padding: 2%;
+    }
+    #parcours h3 {
+      -webkit-text-decoration: underline C;
+              text-decoration: underline C;
+      font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 770px){
+  #langages h2{
+    background: url("https://www.zupimages.net/up/19/38/4r52.jpeg") center;
+    height:50px;}
+  #frameworks h2{
+    background: url("https://www.zupimages.net/up/19/38/l5ye.jpeg") center;
+    height:50px;}
+  #outils h2{
+    background: url("https://www.moncoeurdherault.fr/sites/default/files/field/image/outil-web-la-liste-ultime.jpg") center;
+    height:50px;}
+}
+
+
+
+header {
+  display: flex; 
+  flex-direction: column;
+}
+
+.inputLD {
+  align-self: flex-end;
+  position: absolute;
+  margin-top: 50px;
+  margin-right: 
+}
+
+body {
+  background: #151d29;
+  background: #d6e7f7;
+  color: #dfe6e9;
+  color: #145258;
+  /* center the label in the viewport */
+  min-height: 100vh;
+  
+  
+  
+  transition: background 0.75s ease-in-out;
+}
+
+/* absolute position the input element on top of the accompanying svg element */
+label {
+  
+}
+label input {
+  position: absolute;
+  width: 75px;
+  height: 35px;
+  opacity: 0;
+  
+}
+label svg {
+  width: 75px;
+  height: auto;
+  display: block;
+}
+/* include transitions for the elements modified as the input is checked */
+label input + svg .light {
+  transition: opacity 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
+}
+label input + svg .translate,
+label input + svg .rotate,
+label input + svg .background,
+label input + svg .astronaut,
+label input + svg .surfer {
+  transition: transform 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
+}
+/* make the .light element fully transparent to have the .dark variant see through */
+label input:checked + svg .light {
+  opacity: 0;
+}
+/* translate the sun/moon toward the right (by default it is pushed back with a negative translation) */
+label input:checked + svg .translate {
+  transform: translateX(0px);
+}
+/* rotate the moon (by default it is rotated counter-clockwise) */
+label input:checked + svg .rotate {
+  transform: rotate(0deg);
+}
+/* translate the scale the backgrounds to 0
+this is rather neat, so meant an extra comment
+- the light background is positioned with two groups, one pushing it below the graphic, one back up; by removing the translation of this last group the background "returns" below the toggle
+- the dark background is positioned above and with a smaller vertical scale; by removing the translation it is placed in full view and by increasing its scale it's as if the stars would tumble down with different rates
+*/
+label input:checked + svg .background {
+  transform: translate(0px) scale(1);
+}
