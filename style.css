@@ -388,6 +388,9 @@ max-width:20%;
   #outils h2{
     background: url("https://www.moncoeurdherault.fr/sites/default/files/field/image/outil-web-la-liste-ultime.jpg") center;
     height:50px;}
+  #parcours h2{
+    background: url("https://zupimages.net/up/19/39/jyug.png") center;
+    height:50px;}
 }
 
 .photo{
@@ -425,3 +428,8 @@ max-width:20%;
     padding:2%;
   }
 } 
+
+#reductionHTML, #reductionCSS, #reductionJava, #reductionJS, #reductionPHP, #reductionPython, #reductionC, #reductionFront, #reductionEnd{
+  display:none;
+}
+
