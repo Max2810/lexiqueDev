@@ -14,13 +14,12 @@
     <h1 id="nav">Comment briller lors d'un meet up</h1>
     <div class="inputLD">
       <label for="toggle">
-          <input type="checkbox" />
-          
+        <input type="checkbox" />          
           <svg viewBox="0 0 100 45" width="400" height="180">
-              <defs>
-                  <!-- rectangle used for the background and re-used in the clip and mask elements -->
-                  <rect id="background" x="0" y="0" width="90" height="40" rx="20"></rect>
-          
+            <defs>
+              <!-- rectangle used for the background and re-used in the clip and mask elements -->
+              <rect id="background" x="0" y="0" width="90" height="40" rx="20">
+              </rect>
                   <!-- clip cutting out the elements exceeding the rounded rectangle -->
                   <clipPath id="clip">
                       <use href="#background"></use>
@@ -145,19 +144,19 @@
     
     <nav>
       <div>
-        <div class="div1">
+        <div class="divParcours">
         <a href="#parcours" class="ancre parcImg"><img src="https://blog.drumup.io/wp-content/uploads/2017/06/Feature-image.jpg" alt=""></a>
        </div>
-       <div class="div2">
+       <div class="divLangages">
         <a href="#langages" class="ancre langImg"><img src="https://www.zupimages.net/up/19/38/4r52.jpeg" alt=""></a>
       </div>
     </div>
     <div>
-      <div class="div3">
+      <div class="divFrame">
         <a href="#frameworks" class="ancre frame"><img src="https://www.zupimages.net/up/19/38/l5ye.jpeg
         " alt=""></a>
       </div>
-      <div class="div4">
+      <div class="divTools">
         <a href="#outils" class="ancre tools"><img src="https://www.moncoeurdherault.fr/sites/default/files/field/image/outil-web-la-liste-ultime.jpg" alt=""></a>
       </div>
     </div>
@@ -165,7 +164,7 @@
     
   </header>
   <main>
-  <a href="#nav" class="retour">Retour</a>
+  <a href="#nav" id="retour">Retour</a>
   <section id="parcours">
     <img src="https://blog.drumup.io/wp-content/uploads/2017/06/Feature-image.jpg" alt="Frise représentant l'évolution humaine jusqu'au programmeur devant son ordinateur" class="imgEntete">
     <div class="diff">
@@ -190,7 +189,7 @@
         jQuery est un framework javascript, pour simplifier c'est une bibliothèque Javascript qui permet de coder plus vite et plus simplement.<br />
         Il existe de nombreuses bibliothèques Javascript plus ou moins complexes et adaptées à différents usages.</p>
         <p>Maintenant, pour que le site prenne vie et que le travail du développeur Front-End soit complété, c'est au tour du développeur Back-End d'intervenir !</p> <br>
-        <a href="https://roadmap.sh/frontend" title="Roadmap du parcours front-end">Roadmap du parcours front-end</a>
+        <a href="https://roadmap.sh/frontend" title="Roadmap du parcours front-end" class="textLink">Roadmap du parcours front-end</a>
       </div>
       <br>
       <h3>Le développeur Back-End</h3>
@@ -205,7 +204,7 @@
         Pour pouvoir conserver, traiter, modifier ces données et fournir des informations à jour sur un site internet (comme des actualités, des fiches produits, des images, des vidéos), le développeur Back-End va utiliser des <strong>langages de programmation «dynamique»</strong>.</p>
         <p>Les langages les plus utilisés sont <strong>PHP, Ruby, Python, SQL</strong>. Souvent pour rendre le code plus clair, facilement modifiable et plus simple à maintenir en équipe, le développeur travaille avec des <strong>frameworks</strong> tels que <strong>Cake PHP, Symfony ou Code Igniter</strong>.</p>
         <p>Enfin, le développeur Back-End met également en place et configure le serveur qui accueillera le site lui-même.</p> <br>
-        <a href="https://roadmap.sh/backend" title="Roadmap du parcours Back-end">Roadmap du parcours Back-end</a>
+        <a href="https://roadmap.sh/backend" title="Roadmap du parcours Back-end" class="textLink">Roadmap du parcours Back-end</a>
       </div>
       <br>
       <h3>Conclusion</h3>
