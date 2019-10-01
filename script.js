@@ -24,7 +24,6 @@ const t = setInterval(dePopOfReturnButton, 5000);
 
 function popOfReturnButton () {
   retour.style.display = 'block';
-  
 }
 
 document.addEventListener('click', popOfReturnButton);
