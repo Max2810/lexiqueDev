@@ -72,6 +72,13 @@ nav {
   margin-bottom: 10px;
   padding: 0.5em;
   right: 8%;
+  box-shadow: 4px 4px 8px #666;
+  border-radius: 10px;
+}
+
+#retour:hover{
+  filter: grayscale(30%);
+  filter: blur(0.5px);
 }
 
 footer {
@@ -226,6 +233,44 @@ max-width:20%;
   width:0%;
 }
 
+.divParcours img{
+  box-shadow: 8px 8px 8px #666;
+  border-radius: 10px;
+}
+
+.divLangages img{
+  box-shadow: 8px 8px 8px #666;
+  border-radius: 10px;
+}
+
+.divTools img{
+  box-shadow: 8px 8px 8px #666;
+  border-radius: 10px;
+}
+
+.divFrame img{
+  box-shadow: 8px 8px 8px #666;
+  border-radius: 10px;
+}
+
+.divTools{
+  padding-bottom: 10px;
+}
+.divParcours img:hover{
+  filter: blur(1px)
+}
+
+.divLangages img:hover{
+  filter: grayscale(40%);
+}
+
+.divFrame img:hover{
+  filter: grayscale(40%);
+}
+
+.divTools img:hover{
+  filter: grayscale(40%);
+}
 @media only screen and (min-width: 770px) {
   h1 {
     text-align: start;
@@ -271,16 +316,22 @@ max-width:20%;
 
   .divParcours img {
     height: 90%;
+    box-shadow: 8px 8px 8px #666;
   }
 
   .divLangages img {
     height: 90%;
+    box-shadow: 8px 8px 8px #666;
   }
 
   .divTools img {
     height: 90%;
+    box-shadow: 8px 8px 8px #666;
   }
 
+  .divFrame img{
+    box-shadow: 8px 8px 8px #666;
+  }
   
 
   #Wrap, #Wrap1{
@@ -480,6 +531,11 @@ label input:checked + svg .background {
     margin-top: 4.5em;
     right: 5%;
   }
+  .ancre img{
+    margin-left: 6%;
+    margin-right: ;
+    width: 90%;
+    height: 40%;  }
 }
 
 @media only screen and (min-width: 1370px){
@@ -503,13 +559,7 @@ label input:checked + svg .background {
     margin-left: 40%;
     margin-right: 40%;
     width: 80%;
+
   }
 }
 
-@media only screen and (min-width: 1370px) {
-  .ancre img{
-    margin-left: 40%;
-    margin-right: 40%;
-    width: 80%;
-  }
-}

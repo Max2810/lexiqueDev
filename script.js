@@ -11,8 +11,6 @@ function handleInput() {
 }
 input.addEventListener('input', handleInput);
 
-console.log('Test');
-
 
 const retour = document.getElementById('retour');
 function dePopOfReturnButton () {
