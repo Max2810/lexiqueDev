@@ -74,6 +74,7 @@ nav {
   right: 8%;
   box-shadow: 4px 4px 8px #666;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 #retour:hover{
@@ -271,6 +272,80 @@ max-width:20%;
 .divTools img:hover{
   filter: grayscale(40%);
 }
+
+header {
+  display: flex; 
+  flex-direction: column;
+}
+
+.inputLD {
+  align-self: flex-end ;
+  position: absolute;
+  margin-top: 2.5em;
+  right: 5%;
+}
+
+body {
+  background: #2c3e50;
+  background: #d6e7f7;
+  color: #dfe6e9;
+  color: #145258;
+  /* center the label in the viewport */
+  min-height: 100vh;
+  transition: background 0.75s ease-in-out;
+}
+
+/* absolute position the input element on top of the accompanying svg element */
+
+label input {
+  position: absolute;
+  width: 75px;
+  height: 30px;
+  opacity: 0;
+  
+}
+label svg {
+  width: 75px;
+  height: auto;
+  display: block;
+}
+/* include transitions for the elements modified as the input is checked */
+label input + svg .light {
+  transition: opacity 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
+}
+label input + svg .translate,
+label input + svg .rotate,
+label input + svg .background,
+label input + svg .astronaut,
+label input + svg .surfer {
+  transition: transform 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
+}
+/* make the .light element fully transparent to have the .dark variant see through */
+label input:checked + svg .light {
+  opacity: 0;
+}
+/* translate the sun/moon toward the right (by default it is pushed back with a negative translation) */
+label input:checked + svg .translate {
+  transform: translateX(0px);
+}
+/* rotate the moon (by default it is rotated counter-clockwise) */
+label input:checked + svg .rotate {
+  transform: rotate(0deg);
+}
+/* translate the scale the backgrounds to 0
+this is rather neat, so meant an extra comment
+- the light background is positioned with two groups, one pushing it below the graphic, one back up; by removing the translation of this last group the background "returns" below the toggle
+- the dark background is positioned above and with a smaller vertical scale; by removing the translation it is placed in full view and by increasing its scale it's as if the stars would tumble down with different rates
+*/
+label input:checked + svg .background {
+  transform: translate(0px) scale(1);
+}
+
+.textLink {
+  color:  #ffa500;
+  color: #6c5ce7;
+}
+
 @media only screen and (min-width: 770px) {
   h1 {
     text-align: start;
@@ -367,158 +442,90 @@ max-width:20%;
     max-width:100px;
   }
 
-    .FlexG{
-      -webkit-box-orient:horizontal;
-      -webkit-box-direction:normal;
-          -ms-flex-direction:row;
-              flex-direction:row;
-      -webkit-box-align:start;
-          -ms-flex-align:start;
-              align-items:flex-start;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin-top:20px;
-    }
-    #langages .FlexG{
-      -webkit-box-orient:horizontal;
-      -webkit-box-direction:normal;
-          -ms-flex-direction:row;
-              flex-direction:row;
-      -webkit-box-align:start;
-          -ms-flex-align:start;
-              align-items:flex-start;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin-top:100px;
-    }
+  .FlexG{
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-box-align:start;
+        -ms-flex-align:start;
+            align-items:flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top:20px;
+  }
 
-    .Flexu{ 
-      margin-top:0;
-      margin-bottom:0;
-      -webkit-box-orient:vertical;
-      -webkit-box-direction:normal;
-          -ms-flex-direction:column;
-              flex-direction:column;
-    }
+  #langages .FlexG{
+     -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-box-align:start;
+        -ms-flex-align:start;
+            align-items:flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top:100px;
+  }
 
-    #parcours p {
-      padding-bottom: 2em;
-    }
-    .front {
-      border-left:ridge 5px;
-      border-color: orange;
-      margin: 2%;
-      padding: 2%;
-    }
-    .back {
-      border-left:ridge 5px;
-      border-color: orange;
-      margin: 2%;
-      padding: 2%;
-    }
-    .conclusion {
-      border-left:ridge 5px;
-      border-color: orange;
-      margin: 2%;
-      padding: 2%;
-    }
-    #parcours h3 {
-      -webkit-text-decoration: underline C;
-              text-decoration: underline C;
-      font-size: 1.5em;
-    }
+  .Flexu{ 
+    margin-top:0;
+    margin-bottom:0;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+  }
+
+  #parcours p {
+     padding-bottom: 2em;
+  }
+
+  .front {
+    border-left:ridge 5px;
+    border-color: orange;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .back {
+    border-left:ridge 5px;
+    border-color: orange;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  .conclusion {
+    border-left:ridge 5px;
+    border-color: orange;
+    margin: 2%;
+    padding: 2%;
+  }
+
+  #parcours h3 {
+    -webkit-text-decoration: underline C;
+            text-decoration: underline C;
+    font-size: 1.5em;
+  }
 }
 
 @media only screen and (max-width: 770px){
   #langages h2{
     background: url("https://www.zupimages.net/up/19/38/4r52.jpeg") center;
-    height:50px;}
+    height:50px;
+  }
+
   #frameworks h2{
     background: url("https://www.zupimages.net/up/19/38/l5ye.jpeg") center;
-    height:50px;}
+    height:50px;
+  }
+
   #outils h2{
     background: url("https://www.moncoeurdherault.fr/sites/default/files/field/image/outil-web-la-liste-ultime.jpg") center;
-    height:50px;}
-}
-
-
-
-header {
-  display: flex; 
-  flex-direction: column;
-}
-
-.inputLD {
-  align-self: flex-end ;
-  position: absolute;
-  margin-top: 2.5em;
-  right: 5%;
-}
-
-body {
-  background: #2c3e50;
-  background: #d6e7f7;
-  color: #dfe6e9;
-  color: #145258;
-  /* center the label in the viewport */
-  min-height: 100vh;
-  
-  
-  
-  transition: background 0.75s ease-in-out;
-}
-
-/* absolute position the input element on top of the accompanying svg element */
-
-label input {
-  position: absolute;
-  width: 75px;
-  height: 30px;
-  opacity: 0;
-  
-}
-label svg {
-  width: 75px;
-  height: auto;
-  display: block;
-}
-/* include transitions for the elements modified as the input is checked */
-label input + svg .light {
-  transition: opacity 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
-}
-label input + svg .translate,
-label input + svg .rotate,
-label input + svg .background,
-label input + svg .astronaut,
-label input + svg .surfer {
-  transition: transform 0.75s cubic-bezier(0.68, 0.25, 0.265, 1);
-}
-/* make the .light element fully transparent to have the .dark variant see through */
-label input:checked + svg .light {
-  opacity: 0;
-}
-/* translate the sun/moon toward the right (by default it is pushed back with a negative translation) */
-label input:checked + svg .translate {
-  transform: translateX(0px);
-}
-/* rotate the moon (by default it is rotated counter-clockwise) */
-label input:checked + svg .rotate {
-  transform: rotate(0deg);
-}
-/* translate the scale the backgrounds to 0
-this is rather neat, so meant an extra comment
-- the light background is positioned with two groups, one pushing it below the graphic, one back up; by removing the translation of this last group the background "returns" below the toggle
-- the dark background is positioned above and with a smaller vertical scale; by removing the translation it is placed in full view and by increasing its scale it's as if the stars would tumble down with different rates
-*/
-label input:checked + svg .background {
-  transform: translate(0px) scale(1);
-}
-
-.textLink {
-  color:  #ffa500;
-  color: #6c5ce7;
+    height:50px;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 769px){
@@ -527,19 +534,19 @@ label input:checked + svg .background {
     font-size: 2em;
     padding: 1.1em;
   }
+
   .inputLD {
     margin-top: 4.5em;
     right: 5%;
   }
+
   .ancre img{
     margin-left: 6%;
-    margin-right: ;
     width: 90%;
     height: 40%;  }
 }
 
 @media only screen and (min-width: 1370px){
-
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -551,15 +558,16 @@ label input:checked + svg .background {
     -ms-flex-line-pack: center;
         align-content: center
   }
+
   nav div {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+
   .ancre img{
     margin-left: 40%;
     margin-right: 40%;
     width: 80%;
-
   }
 }
 
