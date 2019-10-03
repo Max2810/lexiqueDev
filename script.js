@@ -19,9 +19,9 @@ function dePopOfReturnButton () {
 
 
 
+const t = setInterval(dePopOfReturnButton, 10000);
 
 function popOfReturnButton () {
-  setInterval(dePopOfReturnButton, 5000);
   retour.style.display = 'block';
 }
 
