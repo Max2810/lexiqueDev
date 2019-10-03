@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
   <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet"> 
   <title>Lexique du Développeur</title>
@@ -166,7 +167,11 @@
   <main>
   <a href="#nav" id="retour">Retour</a>
   <section id="parcours">
-    <img src="https://blog.drumup.io/wp-content/uploads/2017/06/Feature-image.jpg" alt="Frise représentant l'évolution humaine jusqu'au programmeur devant son ordinateur" class="imgEntete">
+      <section class="barre">
+          <h2>Parcours</h2>  
+          <img class="photo" src="https://blog.drumup.io/wp-content/uploads/2017/06/Feature-image.jpg" alt="Frise représentant l'évolution humaine">
+      </section>
+    
     <div class="diff">
       <p>Vous vous demandez ce qui différencie un développeur Front-End d'un développeur Back-End ? Ces termes viennent certainement se mélanger dans votre esprit avec «intégrateur web» ou encore «webmestre», «programmeur», «web designer»...<br />
       Les<strong> rôles</strong> et les profils de poste de la <strong>production web</strong> ont <strong>évolué</strong> au cours de ces dernières années, il est donc parfois difficile de comprendre ce que fait concrètement chacun.</p>
@@ -176,35 +181,44 @@
       <h3>Le développeur Front-End</h3>
       <div class="front">
         <p>Lorsque l'on parle de «Front-End», il s'agit finalement des éléments du site que l'on voit à l'écran et avec lesquels on peut interagir. Ces éléments sont composés de HTML, CSS et de Javascript contrôlés par le navigateur web de l'utilisateur.</p>
-        <p>Les champs de compétence du Front-End peuvent être séparer en deux :<br />
-        - Le <strong>design</strong><br />
-        - Le <strong>développement </strong>HTML, CSS, Javascript</p> <br>
-        <p>Le design est traditionnellement réalisé par un <strong>web designer</strong> qui produit des maquettes graphiques à l'aide de Photoshop ou Fireworks. Cependant de plus en plus de web designers ont franchi la barrière et savent coder en HTML et CSS. Dans certains cas ils sont aussi capables de produire du Javascript.</p>
-        <p>Auparavant lorsque l'on parlait de <strong>développeur</strong>, on sous-entendait développeur <strong>Back-End</strong>. Maintenant on s'aperçoit que <strong>certains web designers </strong>possèdent également des<strong> compétences</strong> en développement.</p>
-        <p>Le <strong>développeur Front-End</strong> est donc une personne qui peut être issue du <strong>milieu du web design</strong> en ayant renforcé ses connaissances en développement. Il peut aussi être un <strong>développeur qui a choisi de se spécialiser</strong> dans les technologies et langages du Front-End tels que :<br />
-        <strong>- HTML</strong><br />
-        <strong> - CSS</strong><br />
-        <strong> - Javascript</strong><br />
-        <strong> - jQuery</strong><br /> <br>
-        jQuery est un framework javascript, pour simplifier c'est une bibliothèque Javascript qui permet de coder plus vite et plus simplement.<br />
-        Il existe de nombreuses bibliothèques Javascript plus ou moins complexes et adaptées à différents usages.</p>
-        <p>Maintenant, pour que le site prenne vie et que le travail du développeur Front-End soit complété, c'est au tour du développeur Back-End d'intervenir !</p> <br>
-        <a href="https://roadmap.sh/frontend" title="Roadmap du parcours front-end" class="textLink">Roadmap du parcours front-end</a>
+
+        <div id="reductionFront">
+          <p>Les champs de compétence du Front-End peuvent être séparer en deux :<br />
+          - Le <strong>design</strong><br />
+          - Le <strong>développement </strong>HTML, CSS, Javascript</p> <br>
+          <p>Le design est traditionnellement réalisé par un <strong>web designer</strong> qui produit des maquettes graphiques à l'aide de Photoshop ou Fireworks. Cependant de plus en plus de web designers ont franchi la barrière et savent coder en HTML et CSS. Dans certains cas ils sont aussi capables de produire du Javascript.</p>
+          <p>Auparavant lorsque l'on parlait de <strong>développeur</strong>, on sous-entendait développeur <strong>Back-End</strong>. Maintenant on s'aperçoit que <strong>certains web designers </strong>possèdent également des<strong> compétences</strong> en développement.</p>
+          <p>Le <strong>développeur Front-End</strong> est donc une personne qui peut être issue du <strong>milieu du web design</strong> en ayant renforcé ses connaissances en développement. Il peut aussi être un <strong>développeur qui a choisi de se spécialiser</strong> dans les technologies et langages du Front-End tels que :<br />
+          <strong>- HTML</strong><br />
+          <strong> - CSS</strong><br />
+          <strong> - Javascript</strong><br />
+          <strong> - jQuery</strong><br /> <br>
+          jQuery est un framework javascript, pour simplifier c'est une bibliothèque Javascript qui permet de coder plus vite et plus simplement.<br />
+          Il existe de nombreuses bibliothèques Javascript plus ou moins complexes et adaptées à différents usages.</p>
+          <p>Maintenant, pour que le site prenne vie et que le travail du développeur Front-End soit complété, c'est au tour du développeur Back-End d'intervenir !</p> <br>
+          <a href="https://roadmap.sh/frontend" title="Roadmap du parcours front-end">Roadmap du parcours front-end</a>
+          <button id="reduce-Front">-</button>
+        </div>
+        <button id="open-Front">+</button>  
       </div>
       <br>
       <h3>Le développeur Back-End</h3>
       <div class="back">
         <p>Le Back-End, c'est un peu comme la <strong>partie immergée de l'iceberg</strong>. Elle est invisible pour les visiteurs mais représente une grande partie du développement d'un projet web. Sans elle, le site web reste une coquille vide.</p>
-        <p>On peut décomposer le Back-End en trois parties essentielles :<br />
-        - Un <strong>serveur</strong> (ou hébergement web)<br />
-        - Une <strong>application</strong> (en l’occurrence le site web)<br />
-        - Une <strong>base de données</strong> (ou l'on stocke les données de l'application)</p> <br>
-        <p>Le <strong>serveur</strong> est comme un disque dur accessible 24 heures sur 24, sur lequel les pages du site web sont enregistrées.</p>
-        <p>Pour pouvoir conserver vos mots de passe, vos préférences, votre panier d'achat que vous avez saisi grâce aux éléments de Front-End, il est nécessaire de les enregistrer dans une<strong> base de données</strong>. La base de données est comparable à un grand tableau avec des colonnes contenant par exemple «nom», «prénom», «mot de passe», «achat en cours». Lors de votre inscription sur un site, votre profil est enregistré dans ce tableau.<br /> <br>
-        Pour pouvoir conserver, traiter, modifier ces données et fournir des informations à jour sur un site internet (comme des actualités, des fiches produits, des images, des vidéos), le développeur Back-End va utiliser des <strong>langages de programmation «dynamique»</strong>.</p>
-        <p>Les langages les plus utilisés sont <strong>PHP, Ruby, Python, SQL</strong>. Souvent pour rendre le code plus clair, facilement modifiable et plus simple à maintenir en équipe, le développeur travaille avec des <strong>frameworks</strong> tels que <strong>Cake PHP, Symfony ou Code Igniter</strong>.</p>
-        <p>Enfin, le développeur Back-End met également en place et configure le serveur qui accueillera le site lui-même.</p> <br>
-        <a href="https://roadmap.sh/backend" title="Roadmap du parcours Back-end" class="textLink">Roadmap du parcours Back-end</a>
+        <div id="reductionEnd">
+          <p>On peut décomposer le Back-End en trois parties essentielles :<br />
+          - Un <strong>serveur</strong> (ou hébergement web)<br />
+          - Une <strong>application</strong> (en l’occurrence le site web)<br />
+          - Une <strong>base de données</strong> (ou l'on stocke les données de l'application)</p> <br>
+          <p>Le <strong>serveur</strong> est comme un disque dur accessible 24 heures sur 24, sur lequel les pages du site web sont enregistrées.</p>
+          <p>Pour pouvoir conserver vos mots de passe, vos préférences, votre panier d'achat que vous avez saisi grâce aux éléments de Front-End, il est nécessaire de les enregistrer dans une<strong> base de données</strong>. La base de données est comparable à un grand tableau avec des colonnes contenant par exemple «nom», «prénom», «mot de passe», «achat en cours». Lors de votre inscription sur un site, votre profil est enregistré dans ce tableau.<br /> <br>
+          Pour pouvoir conserver, traiter, modifier ces données et fournir des informations à jour sur un site internet (comme des actualités, des fiches produits, des images, des vidéos), le développeur Back-End va utiliser des <strong>langages de programmation «dynamique»</strong>.</p>
+          <p>Les langages les plus utilisés sont <strong>PHP, Ruby, Python, SQL</strong>. Souvent pour rendre le code plus clair, facilement modifiable et plus simple à maintenir en équipe, le développeur travaille avec des <strong>frameworks</strong> tels que <strong>Cake PHP, Symfony ou Code Igniter</strong>.</p>
+          <p>Enfin, le développeur Back-End met également en place et configure le serveur qui accueillera le site lui-même.</p> <br>
+          <a href="https://roadmap.sh/backend" title="Roadmap du parcours Back-end">Roadmap du parcours Back-end</a>
+          <button id="reduce-End">-</button>
+        </div>
+        <button id="open-End">+</button> 
       </div>
       <br>
       <h3>Conclusion</h3>
@@ -226,18 +240,23 @@
       </section>   
       <section class="Bloc" >
           <p>HTML est l'abréviation de Hypertext Markup Language (langage de balisage d'hypertexte), révélé en 1991 par Tim Berners-Lee, le HTML fait parti des bases de l'internet. Il ne s’agit pas réellement d’un langage de programmation mais d’un langage de balisage. HTML est une des trois inventions à la base du World Wide Web.</p> 
-          
-          <p>HTML 'est un format de données qui permet de concevoir des pages web qui peuvent se lier entre elles grâce à des liens et peuvent également faire appel à des images, des vidéos, des animations ou encore utiliser des scripts JavaScript ou du CSS.</p>
+          <div class="reduit">
+            <div id="reductionHTML">
+            <p>HTML 'est un format de données qui permet de concevoir des pages web qui peuvent se lier entre elles grâce à des liens et peuvent également faire appel à des images, des vidéos, des animations ou encore utiliser des scripts JavaScript ou du CSS.</p>
                   
-          <p>Les enjeux du respect des normes en HTML :</p>
-          <ul class="puce1">
-            <li> Rendre un contenu lisible par tous, ce qui pour un document est primordial,</li>
-            <li> S’assurer que quelque soit la plateforme de destination, l’information sera comprise </li>
-          </ul>
+            <p>Les enjeux du respect des normes en HTML :</p>
+            <ul class="puce1">
+              <li> Rendre un contenu lisible par tous, ce qui pour un document est primordial,</li>
+              <li> S’assurer que quelque soit la plateforme de destination, l’information sera comprise </li>
+            </ul>
           
-          <p>Ce HTML a bénéficié de plusieurs évolutions, HTML 5 est la version actuelle. Toutefois, en 2011, a été créé HTML Living Standard (standard vivant du HTML), une spécification de HTML prévue pour être en constante évolution, afin de coller avec les développements rapides de nouvelles fonctionnalités par les développeurs de navigateurs.(par exemple, les nouveaux bugs ne sont pas pris en compte dans le HTML5, des différences syntaxiques sont répertoriées, et de nouvelles balises créées par le HTML Living Standard ne sont pas incluses dans le HTML5).</p>
+            <p>Ce HTML a bénéficié de plusieurs évolutions, HTML 5 est la version actuelle. Toutefois, en 2011, a été créé HTML Living Standard (standard vivant du HTML), une spécification de HTML prévue pour être en constante évolution, afin de coller avec les développements rapides de nouvelles fonctionnalités par les développeurs de navigateurs.(par exemple, les nouveaux bugs ne sont pas pris en compte dans le HTML5, des différences syntaxiques sont répertoriées, et de nouvelles balises créées par le HTML Living Standard ne sont pas incluses dans le HTML5).</p>
                 
-          <p>Pour créer un fichier HTML valide, il faut un éditeur de texte et un navigateur web pour visualiser le résultat.</p>
+            <p>Pour créer un fichier HTML valide, il faut un éditeur de texte et un navigateur web pour visualiser le résultat.</p>
+            <button id="reduce-HTML">-</button>
+            </div>
+          </div>
+          <button id="open-HTML">+</button>
       </section>
     </section>
 
@@ -248,34 +267,45 @@
       </section>
       <section class="Bloc" >  
         <p>L’acronyme CSS signifie Cascading Style Sheets (feuille de style en cascade). Ce langage informatique complémentaire de l’HTML  est né en 1996 à l’initiative de la W3C.</p>
+        <div class="reduit">
+          <div id="reductionCSS">
+          <p>Le mot « Feuilles » équivaut aux fichiers ; ensuite, le mot « Style » implique la mise en forme d’éléments et enfin le mot Cascade », signifie combinaison de différents styles appliqués pour le même document.</p>
 
-        <p>Le mot « Feuilles » équivaut aux fichiers ; ensuite, le mot « Style » implique la mise en forme d’éléments et enfin le mot Cascade », signifie combinaison de différents styles appliqués pour le même document.</p>
+          <p>Les enjeux :<p>
+          <ul class="puce1">
+            <li>Décomposer l’architecture d’un document de sa forme. On commence toujours par le fond avant la forme.</li>
+            <li>Définir le rendu stylistique d’un document en fonction du média et des préférences de l’utilisateur.</li>
+            <li>Associer différentes sources de styles à un seul et même document, soit par origine des styles, soit par média soit selon la structure de l’ensemble du document.</li>
+          </ul>
 
-        <p>Les enjeux :<p>
-        <ul class="puce1">
-          <li>Décomposer l’architecture d’un document de sa forme. On commence toujours par le fond avant la forme.</li>
-          <li>Définir le rendu stylistique d’un document en fonction du média et des préférences de l’utilisateur.</li>
-          <li>Associer différentes sources de styles à un seul et même document, soit par origine des styles, soit par média soit selon la structure de l’ensemble du document.</li>
-        </ul>
+          <p>À ce jour, le CSS a évolué quatre fois sans cesser de se renouveler avec les mises à jour . CSS 3 est la version actuelle avec l’arrivée des « Médias Queries » qui facilite la transposition des sites Web sur tous les écrans. Une version 4 est en cours de développement.</p>
 
-        <p>À ce jour, le CSS a évolué quatre fois sans cesser de se renouveler avec les mises à jour . CSS 3 est la version actuelle avec l’arrivée des « Médias Queries » qui facilite la transposition des sites Web sur tous les écrans. Une version 4 est en cours de développement.</p>
+          <p>Pour créer du CSS, il faut un éditeur de texte et un navigateur internet pour tester la page Web avec la mise en forme.</p>
 
-        <p>Pour créer du CSS, il faut un éditeur de texte et un navigateur internet pour tester la page Web avec la mise en forme.</p>
-
-        <p>Il existe 3 solutions pour écrire du code en CSS mais on vous conseille de le mettre dans un fichier à part et le lier dans votre HTML avec "(link rel="stylesheet" href="... .css" )".</p>
+          <p>Il existe 3 solutions pour écrire du code en CSS mais on vous conseille de le mettre dans un fichier à part et le lier dans votre HTML avec "(link rel="stylesheet" href="... .css" )".</p>
+          <button id="reduce-CSS">-</button>
+          </div>
+        <button id="open-CSS">+</button>        
+        </div>
       </section>   
     </section>    
 
   <section class="FlexG">    
     <section class="Flexu">
-      <img  class="IMA" src="https://cutt.ly/pwKAYdH"  alt="Java">
+      <img  class="IMA" src="https://zupimages.net/up/19/39/dqm0.jpg"  alt="Java">
       <h3>Java</h3>
     </section> 
     <section class="Bloc" >  
       <p>La technologie Java définit à la fois un langage de programmation orienté objet et une plateforme informatique. Créée en 1995 par l'entreprise Sun Microsystems , et reprise depuis par la société Oracle, la technologie Java est indissociable du domaine de l'informatique et du Web.</p>
-      <p>Reprenant en grande partie la syntaxe du langage C++, le langage de programmation informatique orienté objet Java permet de développer des applications client-serveur. </p>
-      <p>Depuis son lancement en 1995, Java a connu de multiples versions et améliorations. Ces dernières années, les versions Java 7 et Java 8, toutes deux existant en version Java 64 bits et 32 bits, font figure d'incontournables. Java 9 est actuellement en préparation.</p>
-      <p>Défini à l'origine comme un langage, Java a évolué au cours du temps pour devenir une technologie, qui intègre une bibliothèque complète pour exécuter ou développer une multitude d'applications. La particularité principale de Java est que les applications écrites dans ce langage sont très facilement portables sur plusieurs systèmes d’exploitation avec peu ou pas de modifications. C’est la plate-forme qui garantit la portabilité des applications développées en Java.</p>
+      <div class="reduit">
+        <div id="reductionJava">      
+          <p>Reprenant en grande partie la syntaxe du langage C++, le langage de programmation informatique orienté objet Java permet de développer des applications client-serveur. </p>
+          <p>Depuis son lancement en 1995, Java a connu de multiples versions et améliorations. Ces dernières années, les versions Java 7 et Java 8, toutes deux existant en version Java 64 bits et 32 bits, font figure d'incontournables. Java 9 est actuellement en préparation.</p>
+          <p>Défini à l'origine comme un langage, Java a évolué au cours du temps pour devenir une technologie, qui intègre une bibliothèque complète pour exécuter ou développer une multitude d'applications. La particularité principale de Java est que les applications écrites dans ce langage sont très facilement portables sur plusieurs systèmes d’exploitation avec peu ou pas de modifications. C’est la plate-forme qui garantit la portabilité des applications développées en Java.</p>
+          <button id="reduce-Java">-</button>
+          </div>
+        <button id="open-Java">+</button>        
+        </div>
     </section>
   </section>  
 
@@ -286,12 +316,18 @@
     </section>
     <section class="Bloc" >   
       <p>Le JavaScript est un langage de programmation de scripts orienté objet créé en 1995.</p>
-      <p>Le JavaScript permet de programmer des scripts. Comme tout langage de programmation, il permet d'écrire du code source qui sera analysé par l'ordinateur. </p>
-      <p>JavaScript est un langage interprété ! Il est donc nécessaire de posséder un interpréteur pour faire fonctionner du code JavaScript, et un interpréteur, vous en utilisez un fréquemment : il est inclus dans votre navigateur Web !</p>
-      <p>Créé dans les années 90 en tant que simple langage de script, JavaScript est désormais un des poids lourds du développement Web ! Qui plus est, il se démocratise au sein d'autres environnements comme les serveurs avec le célèbre Node.js, les applications pour smartphones et tablettes, avec PhoneGap d'Adobe, les applications pour Windows 8, mais aussi les logiciels multiplateformes.</p>
-      <p>Bref, JavaScript est partout ! </p>
-      <br>
-      <p>Les versions du JavaScript sont basées sur celles de l'ECMAScript . Aujourd’hui il, s’agit de la version 5 de l'ECMAScript, la version 6 n'étant pas encore très bien supportée à l'heure où nous écrivons ces lignes.</p>
+      <div class="reduit">
+        <div id="reductionJS"> 
+          <p>Le JavaScript permet de programmer des scripts. Comme tout langage de programmation, il permet d'écrire du code source qui sera analysé par l'ordinateur. </p>
+          <p>JavaScript est un langage interprété ! Il est donc nécessaire de posséder un interpréteur pour faire fonctionner du code JavaScript, et un interpréteur, vous en utilisez un fréquemment : il est inclus dans votre navigateur Web !</p>
+          <p>Créé dans les années 90 en tant que simple langage de script, JavaScript est désormais un des poids lourds du développement Web ! Qui plus est, il se démocratise au sein d'autres environnements comme les serveurs avec le célèbre Node.js, les applications pour smartphones et tablettes, avec PhoneGap d'Adobe, les applications pour Windows 8, mais aussi les logiciels multiplateformes.</p>
+          <p>Bref, JavaScript est partout ! </p>
+          <br>
+          <p>Les versions du JavaScript sont basées sur celles de l'ECMAScript . Aujourd’hui il, s’agit de la version 5 de l'ECMAScript, la version 6 n'étant pas encore très bien supportée à l'heure où nous écrivons ces lignes.</p>
+          <button id="reduce-JS">-</button>
+        </div>
+        <button id="open-JS">+</button>        
+      </div>
     </section>
   </section>
 
@@ -302,11 +338,16 @@
     </section>  
     <section class="Bloc" > 
       <p>Le PHP est un langage informatique utilisé sur l'internet. Le terme PHP est un acronyme récursif de "PHP: Hypertext Preprocessor".</p>
+      <div class="reduit">
+        <div id="reductionPHP"> 
+          <p>Ce langage est principalement utilisé pour produire un site web dynamique. Il est courant que ce langage soit associé à une base de données, tel que MySQL.</p>
+          <p>Exécuté du côté serveur (l'endroit où est hébergé le site) il n'y a pas besoin aux visiteurs d'avoir des logiciels ou plugins particulier. Néanmoins, les webmasters qui souhaitent développer un site en PHP doivent s'assurer que l'hébergeur prend en compte ce langage.</p>
 
-      <p>Ce langage est principalement utilisé pour produire un site web dynamique. Il est courant que ce langage soit associé à une base de données, tel que MySQL.</p>
-      <p>Exécuté du côté serveur (l'endroit où est hébergé le site) il n'y a pas besoin aux visiteurs d'avoir des logiciels ou plugins particulier. Néanmoins, les webmasters qui souhaitent développer un site en PHP doivent s'assurer que l'hébergeur prend en compte ce langage.</p>
-
-      <p>Lorsqu'une page PHP est exécuté par le serveur, alors celui-ci renvois généralement au client (aux visiteurs du site) une page web qui peut contenir du HTML, XHTML, CSS, JavaScript ...</p>
+          <p>Lorsqu'une page PHP est exécuté par le serveur, alors celui-ci renvois généralement au client (aux visiteurs du site) une page web qui peut contenir du HTML, XHTML, CSS, JavaScript ...</p>
+          <button id="reduce-PHP">-</button>
+        </div>
+      <button id="open-PHP">+</button>        
+     </div>      
     </section>
   </section>    
 
@@ -316,11 +357,18 @@
       <h3>Python</h3>
     </section>  
     <section class="Bloc" > 
-      <p>Python (en anglais : [ˈpaɪ.θɑːn]) est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.</p>
+      <p>Python (en anglais : [ˈpaɪ.θɑːn]) est un langage de programmation interprété, multi-paradigme et multiplateformes.</p>
+      <div class="reduit">
+          <div id="reductionPython">       
+            <p>Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.</p>
 
-      <p>Le langage Python est placé sous une licence libre proche de la licence BSD9 et fonctionne sur la plupart des plates-formes informatiques, des smartphones aux ordinateurs centraux10, de Windows à Unix avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs en offrant des outils de haut niveau et une syntaxe simple à utiliser.</p>
+            <p>Le langage Python est placé sous une licence libre proche de la licence BSD9 et fonctionne sur la plupart des plates-formes informatiques, des smartphones aux ordinateurs centraux10, de Windows à Unix avec notamment GNU/Linux en passant par macOS, ou encore Android, iOS, et peut aussi être traduit en Java ou .NET. Il est conçu pour optimiser la productivité des programmeurs en offrant des outils de haut niveau et une syntaxe simple à utiliser.</p>
 
-      <p>Il est également apprécié par certains pédagogues qui y trouvent un langage où la syntaxe, clairement séparée des mécanismes de bas niveau, permet une initiation aisée aux concepts de base de la programmation11. </p>
+            <p>Il est également apprécié par certains pédagogues qui y trouvent un langage où la syntaxe, clairement séparée des mécanismes de bas niveau, permet une initiation aisée aux concepts de base de la programmation11. </p>
+            <button id="reduce-Python">-</button>
+          </div>
+        <button id="open-Python">+</button>        
+       </div>      
     </section>
   </section>  
       
@@ -341,8 +389,13 @@
     </section>  
     <section class="Bloc" > 
       <p>C++ est un langage de programmation compilé permettant la programmation sous de multiples paradigmes (comme la programmation procédurale, orientée objet ou générique). Ses bonnes performances, et sa compatibilité avec le C en font un des langages de programmation les plus utilisés dans les applications où la performance est critique.</p>
-
-      <p>Créé initialement par Bjarne Stroustrup dans les années 1980, le langage C++ est aujourd'hui normalisé par l'ISO. </p>
+      <div class="reduit">
+          <div id="reductionC">    
+            <p>Créé initialement par Bjarne Stroustrup dans les années 1980, le langage C++ est aujourd'hui normalisé par l'ISO. </p>
+            <button id="reduce-C++">-</button>
+          </div>
+        <button id="open-C++">+</button>        
+      </div>         
     </section>  
   </section> 
 
@@ -494,6 +547,6 @@
       <a href="https://www.linkedin.com/in/cindie-jouvin-42019a168/" class="nav_foot" title="Link to linkedin Wojtek">Wojtek Zdebski</a>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

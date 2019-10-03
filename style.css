@@ -526,6 +526,9 @@ label input:checked + svg .background {
     background: url("https://www.moncoeurdherault.fr/sites/default/files/field/image/outil-web-la-liste-ultime.jpg") center;
     height:50px;
   }
+  #parcours h2{
+    background: url("https://zupimages.net/up/19/39/jyug.png") center;
+    height:50px;}
 }
 
 @media only screen and (min-width: 500px) and (max-width: 769px){
@@ -567,5 +570,9 @@ label input:checked + svg .background {
   .ancre img{
     width: 80%;
   }
+} 
+
+#reductionHTML, #reductionCSS, #reductionJava, #reductionJS, #reductionPHP, #reductionPython, #reductionC, #reductionFront, #reductionEnd{
+  display:none;
 }
 
