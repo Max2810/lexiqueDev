@@ -556,17 +556,15 @@ label input:checked + svg .background {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-line-pack: center;
-        align-content: center
+        align-content: center;
+        justify-content: space-evenly;
   }
 
   nav div {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-pack: distribute;  
   }
 
   .ancre img{
-    margin-left: 40%;
-    margin-right: 40%;
     width: 80%;
   }
 }
