@@ -67,7 +67,7 @@ nav {
   bottom: 0;
   background-color: orange;
   color: black;
-  display: block;
+  display: none;
   text-align: center;
   margin-bottom: 10px;
   padding: 0.5em;
