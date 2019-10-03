@@ -25,4 +25,3 @@ function popOfReturnButton () {
 }
 
 document.addEventListener('click', popOfReturnButton);
-
