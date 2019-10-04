@@ -357,6 +357,20 @@ label input:checked + svg .background {
   header {
     width: 100%;
   }
+
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+        justify-content: space-evenly;
+  }
+
   .intro {
     font-size: 1.5em;
   }
@@ -568,4 +582,3 @@ label input:checked + svg .background {
     width: 80%;
   }
 }
-
