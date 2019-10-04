@@ -26,6 +26,8 @@ function popOfReturnButton () {
 }
 
 document.addEventListener('click', popOfReturnButton);
+
+
 // Reduction du texte sur HTML
 const modal = document.getElementById('reductionHTML')
 

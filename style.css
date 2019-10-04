@@ -542,6 +542,11 @@ label input:checked + svg .background {
   #parcours h2{
     background: url("https://zupimages.net/up/19/39/jyug.png") center;
     height:50px;}
+  }
+
+  h2{
+    text-shadow: 0.1em 0.1em #666;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 769px){
