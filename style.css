@@ -361,6 +361,19 @@ label input:checked + svg .background {
     font-size: 1.5em;
   }
 
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+        justify-content: space-evenly;
+  }
+
   .column1 {
     margin-left: 15%;
   }
@@ -550,18 +563,7 @@ label input:checked + svg .background {
 }
 
 @media only screen and (min-width: 1370px){
-  nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-line-pack: center;
-        align-content: center;
-        justify-content: space-evenly;
-  }
+  
 
   nav div {
     -ms-flex-pack: distribute;  
