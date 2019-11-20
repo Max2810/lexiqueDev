@@ -3,7 +3,7 @@ const modal = document.getElementById('reductionHTML')
 
 const seeModal = document.getElementById('open-HTML')
 
-const modifHeight = document.getElement
+const linkHtml = document.getElementById("reduitHTML")
 
 seeModal.addEventListener("click", () => {
   modal.style.display = 'block';
@@ -14,7 +14,8 @@ const hideModal = document.getElementById('reduce-HTML')
 
 hideModal.addEventListener("click", () => {
   modal.style.display = 'none';
-  seeModal.style.display='block';  
+  seeModal.style.display='block';
+  window.location.hash=linkHtml;
 });
 
 // Reduction du texte sur CSS
@@ -22,22 +23,28 @@ const modalCss = document.getElementById('reductionCSS')
 
 const seeModalCss = document.getElementById('open-CSS')
 
+const linkCss = document.getElementById("reduitCss")
+
 seeModalCss.addEventListener("click", () => {
   modalCss.style.display = 'block';
-  seeModalCss.style.display='none';}
+  seeModalCss.style.display='none';
+  linkCss.innerHTML }
 );
 
 const hideModalCss = document.getElementById('reduce-CSS')
 
 hideModalCss.addEventListener("click", () => {
   modalCss.style.display = 'none';
-  seeModalCss.style.display='block';  
+  seeModalCss.style.display='block'; 
+  linkCss.innerHTML 
 });
 
 // Reduction du texte sur Java
 const modalJava = document.getElementById('reductionJava')
 
 const seeModalJava = document.getElementById('open-Java')
+
+const linkJava = document.getElementById("reduitJava")
 
 seeModalJava.addEventListener("click", () => {
   modalJava.style.display = 'block';
@@ -48,7 +55,8 @@ const hideModalJava = document.getElementById('reduce-Java')
 
 hideModalJava.addEventListener("click", () => {
   modalJava.style.display = 'none';
-  seeModalJava.style.display='block';  
+  seeModalJava.style.display='block'; 
+  linkJava.innerHTML 
 });
 
 // Reduction du texte sur JS
@@ -124,6 +132,8 @@ const modalFront = document.getElementById('reductionFront')
 
 const seeModalFront = document.getElementById('open-Front')
 
+const linkFront = document.getElementById("reductionFront")
+
 seeModalFront.addEventListener("click", () => {
   modalFront.style.display = 'block';
   seeModalFront.style.display='none';}
@@ -133,7 +143,8 @@ const hideModalFront = document.getElementById('reduce-Front')
 
 hideModalFront.addEventListener("click", () => {
   modalFront.style.display = 'none';
-  seeModalFront.style.display='block';  
+  seeModalFront.style.display='block';
+  linkFront.innerHTML  
 });
 
 
