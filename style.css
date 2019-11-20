@@ -560,6 +560,12 @@ label input:checked + svg .background {
   .divParcours, .divLangages, .divFrame, .divTools, .imgnav{
     width:410px;
   }
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size:1.5em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 769px){
