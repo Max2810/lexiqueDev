@@ -5,10 +5,19 @@
           box-sizing: border-box;
   font-family: 'Ubuntu Condensed','Hind', sans-serif;
 }
+#parcours, #langages, #frameworks, #outils{
+  margin-top:100px;
+}
+
+#reductionHTML, #reductionCSS, #reductionJava, #reductionJS, #reductionPHP, #reductionPython, #reductionC, #reductionFront, #reductionEnd{
+  display:none;
+}
+
+.divParcours, .divLangages, .divFrame, .divTools, .imgnav{
+  width:625px;
+}
 
 body {
-  
-  
   font-size: 1.3em;
   letter-spacing: 0.1rem;
 }
@@ -20,7 +29,7 @@ main {
 
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 46px;
   color: black;
   text-shadow: 0 0 7px white;
   background: #87A1FF;
@@ -40,6 +49,10 @@ h1 {
 
 h2 {
   margin-top: 1.5em;
+  font-size:3.5em;
+  background-color:white;
+  height:100px;
+  width:70%;
 }
 
 nav {
@@ -125,11 +138,11 @@ footer {
   margin-top: 0.2em;
 }
 
-.imgEntete {
+/* .imgEntete {
   width: 84%;
   margin-left: 8%;
   margin-right: 8%;
-}
+} */
 
 h2 {
   margin-top: 2em;
@@ -382,40 +395,40 @@ label input:checked + svg .background {
     margin-right: 15%;
   }
 
-  nav .divParcours {
+  /* nav .divParcours {
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
 
   nav .divLangages {
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
   
   nav .divFrame {
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
 
   nav .divTools {
     width: 100%;
-    height: 50%;
+    height: 100%;
   }
 
   .divParcours img {
-    height: 90%;
+    height: 100%;
     box-shadow: 8px 8px 8px #666;
   }
 
   .divLangages img {
-    height: 90%;
+    height: 100%;
     box-shadow: 8px 8px 8px #666;
   }
 
   .divTools img {
-    height: 90%;
+    height: 100%;
     box-shadow: 8px 8px 8px #666;
-  }
+  } */
 
   .divFrame img{
     box-shadow: 8px 8px 8px #666;
@@ -526,27 +539,33 @@ label input:checked + svg .background {
 
 @media only screen and (max-width: 770px){
   #langages h2{
-    background: url("https://www.zupimages.net/up/19/38/4r52.jpeg") center;
+    background: url("https://zupimages.net/up/19/47/goi0.jpg") center;
     height:50px;
   }
-
   #frameworks h2{
-    background: url("https://www.zupimages.net/up/19/38/l5ye.jpeg") center;
+    background: url("https://zupimages.net/up/19/47/k4vt.png") center;
     height:50px;
   }
-
   #outils h2{
-    background: url("https://www.moncoeurdherault.fr/sites/default/files/field/image/outil-web-la-liste-ultime.jpg") center;
+    background: url("https://zupimages.net/up/19/47/9br4.jpg") center;
     height:50px;
   }
   #parcours h2{
-    background: url("https://zupimages.net/up/19/39/jyug.png") center;
-    height:50px;}
+    background: url("https://zupimages.net/up/19/47/5kuv.jpg") center;
+    height:50px;
   }
-
   h2{
     text-shadow: 0.1em 0.1em #666;
   }
+  .divParcours, .divLangages, .divFrame, .divTools, .imgnav{
+    width:410px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size:1.5em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 769px){
@@ -555,12 +574,10 @@ label input:checked + svg .background {
     font-size: 2em;
     padding: 1.1em;
   }
-
   .inputLD {
     margin-top: 4.5em;
     right: 5%;
   }
-
   .ancre img{
     margin-left: 6%;
     width: 90%;
@@ -568,18 +585,11 @@ label input:checked + svg .background {
 }
 
 @media only screen and (min-width: 1370px){
-  
-
   nav div {
     -ms-flex-pack: distribute;  
   }
-
   .ancre img{
     width: 80%;
   }
 } 
-
-#reductionHTML, #reductionCSS, #reductionJava, #reductionJS, #reductionPHP, #reductionPython, #reductionC, #reductionFront, #reductionEnd{
-  display:none;
-}
 
